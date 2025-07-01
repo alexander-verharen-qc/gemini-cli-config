@@ -1,0 +1,3 @@
+option,description,syntax
+jira-approval,"Generates a simple reminder message to get approval for a specific JIRA ticket, often used before a PR merge.","pattern: jira-approval {ticket}\n  command: echo ""Please approve transitioning JIRA ticket {ticket}"""
+gh-pr-actions,"A comprehensive workflow to view a GitHub PR in the browser, check its CI/CD status, and then access sub-patterns to merge or close it.","pattern: gh-pr-actions {pr_number}\n  command: gh pr view {pr_number} --web\n  command: gh pr checks {pr_number}\n  command: echo ""Do you want to merge/close this PR? (use @merge-pr or @close-pr)""\n  pattern: merge-pr {pr_number}\n    command: gh pr merge {pr_number}\n  pattern: close-pr {pr_number}\n    command: gh pr close {pr_number}"
