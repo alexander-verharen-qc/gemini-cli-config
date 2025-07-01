@@ -1,0 +1,10 @@
+option,description,syntax
+terraform-repo,"Describes a Terraform repository, including its environment, workspace details, and execution requirements.","pattern: terraform-repo {environment} {repo} {workspace}
+  file: github.com/one-thd/{repo}
+  command: ""@bot run apply {chg}""
+  environment: {environment}
+  workspace: {workspace}
+  chg: {chg}"
+tf-module,Finds the main, variables
+tf-plan,Runs 'terraform plan' in the current directory.,command: tf-plan\n  exec: terraform plan
+tf-apply,Runs 'terraform apply' with auto-approval.,command: tf-apply\n  exec: terraform apply -auto-approve
