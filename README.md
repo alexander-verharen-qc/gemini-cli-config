@@ -33,17 +33,17 @@ This tool provides an interactive interface to:
  │   ├── terraform.csv  >─────────┐              │
  │   ├── gcp.csv        >─────┐   │              │
  │   └── github.csv     >──┐  │   │              │
- └────────────────────────┘  │   │              │
-                             ▼   ▼              │
-                  ┌────────────────────┐        │
-                  │ gemini_cli_config.py        │  <── You Are Here
-                  └──────────┬─────────┘        │
-                             |                  │ (Manage/Load Packs)
-                             ▼                  │
-                     [ Your Active Set ]        │
-                  ┌────────────────────┐        │
-                  │    patterns.csv    │────────┘
-                  └────────────────────┘
+ └─────────────────────────┘  │   │              │
+                              ▼   ▼              │
+                   ┌────────────────────┐        │
+                   │ gemini_cli_config.py        │  <── You Are Here
+                   └──────────┬─────────┘        │
+                              |                  │ (Manage/Load Packs)
+                              ▼                  │
+                      [ Your Active Set ]        │
+                   ┌────────────────────┐        │
+                   │    patterns.csv    │────────┘
+                   └────────────────────┘
                              |
                              | (Sync to Global)
                              ▼
