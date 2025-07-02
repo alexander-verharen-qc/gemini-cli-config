@@ -64,8 +64,8 @@ This tool provides an interactive interface to:
 
 1.  **Clone the Repository:**
     ```bash
-    git clone https://github.com/one-thd/reliability-engineering-prompts.git
-    cd reliability-engineering-prompts/gemini_cli_config
+    git clone https://github.com/alexander-verharen-qc/gemini-cli-config.git
+    cd gemini_cli_config
     ```
 
 2.  **Install Dependencies:**
