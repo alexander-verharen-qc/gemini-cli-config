@@ -1,4 +1,4 @@
 option,description,syntax
-tf-module,Finds the main, variables, and outputs files for a Terraform module.,"pattern: tf-module {name}\n  file: {name}/main.tf\n  file: {name}/variables.tf\n  file: {name}/outputs.tf"
+tf-module,Finds the main\, variables\, and outputs files for a Terraform module.,"pattern: tf-module {name}\n  file: {name}/main.tf\n  file: {name}/variables.tf\n  file: {name}/outputs.tf"
 tf-plan,Runs 'terraform plan' in the current directory.,"command: tf-plan\n  exec: terraform plan"
 tf-apply,Runs 'terraform apply' with auto-approval.,"command: tf-apply\n  exec: terraform apply -auto-approve"
